@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+.ui-content{
+		text-align: center;
+		padding: 200px;
+}
+
+img {
+	width: auto;
+	border-radius: 8px;
+	max-width: 100%;
+	height: auto;
+}
+
+
+

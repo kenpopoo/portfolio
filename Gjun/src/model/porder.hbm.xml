@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2019/11/11 ?????? 04:47:19 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="model.porder" table="PORDER">
+        <id name="id" type="int">
+            <column name="ID" />
+            <generator class="assigned" />
+        </id>
+        <property name="name" type="java.lang.String">
+            <column name="NAME" />
+        </property>
+        <property name="pro1" type="int">
+            <column name="PRO1" />
+        </property>
+        <property name="pro2" type="int">
+            <column name="PRO2" />
+        </property>
+        <property name="pro3" type="int">
+            <column name="PRO3" />
+        </property>
+        <property name="sum" type="int" access="field">
+            <column name="SUM" />
+        </property>
+    </class>
+</hibernate-mapping>

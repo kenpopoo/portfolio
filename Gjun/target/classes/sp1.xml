@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<bean id="member" class="model.member"/>
+	<bean id="porder" class="model.porder"/>
+	<bean id="mDao" class="dao.Member.memberDAO"/>
+	<bean id="pDao" class="dao.Porder.porderDAO"/>
+	
+	<bean id="sp1" class="model.Sp">
+		<property name="member" ref="member"/>
+		<property name="porder" ref="porder"/>
+		<property name="memberDAO" ref="mDao"/>
+		<property name="porderDAO" ref="pDao"/>
+	</bean>
+
+</beans>
