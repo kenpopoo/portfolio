@@ -9,7 +9,7 @@ Configuration 2.5//EN" "http://struts.apache.org/dtds/struts-2.5.dtd">
 		</action>	
 		<action name="add" class="controller.addAction">
 			<result name="success">/member/login.jsp</result>	
-			<result name="error">/member/addError.jsp</result>			
+			<result name="error">/member/add.jsp</result>			
 		</action>
 		<action name="finish" class="controller.finishAction">
 			<result name="yes">/order/finish.jsp</result>	

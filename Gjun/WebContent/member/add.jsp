@@ -40,7 +40,7 @@
 	</div>
 
 	<div data-role="content" class="ui-content">
-		<form action="add" method="post">
+		<form action="add" method="post" data-ajax="false" name="loginForm">
 			<div class="ui-field-contain">
 				<label for="name">姓名</label> 
 				<input type="text" name="name" id="name">
@@ -55,7 +55,7 @@
 				<label for="phone">室內電話</label> 
 				<input type="text" name="phone" id="phone">
 			</div>
-			<input type="submit" value="確定" onClick="check()">
+			<input type="button" value="確定" onClick="check()">
 		</form>
 	</div>
 

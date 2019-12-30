@@ -25,8 +25,9 @@ public class addAction extends ActionSupport{
 		Sp sp = (Sp)ac.getBean("sp1");
 		
 		boolean b = new memberDAO().checkUser(user);
+		member m = sp.getMember();
+		
 		if (b) {
-			member m = sp.getMember();
 			m.setName(name);
 			m.setUser(user);
 			m.setPassword(password);
