@@ -63,10 +63,21 @@
 	
 	
 	function deleteOrder(){
-		alert("確定刪除訂單?");
+		var b = confirm("確定刪除訂單?");
+		if(b == true){
+			var delForm = document.getElementById("revise");
+			var action =  document.createAttribute("action");
+			action.value = "delete";
+			delForm.setAttributeNode(action);
+		}
+		
+		
+	}
+	
+	function updateOrder(){
 		var delForm = document.getElementById("revise");
 		var action =  document.createAttribute("action");
-		action.value = "delete";
+		action.value = "orderUpdate.jsp";
 		delForm.setAttributeNode(action);
 		
 	}
@@ -108,7 +119,7 @@
 				</tbody>
 			</table>
 		</form>
-		<input type="submit" value="修改" data-inline="true" form="revise">
+		<input type="submit" value="修改" data-inline="true" form="revise" onClick="updateOrder()">
 		<input type="submit" value="刪除" data-inline="true" form="revise" onClick="deleteOrder()">
 
 	</div>
